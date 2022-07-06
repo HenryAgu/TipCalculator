@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/HenryAgu/TipCalculator.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://heroic-peony-9ca0fb.netlify.app/)
 
 
 ### Built with
