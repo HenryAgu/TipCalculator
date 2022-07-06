@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  </style>
+</head>
+<body>
+    <main>
+      <img src="images/logo.svg" alt="logo">
+      <div class="container">
+          <div class="left">
+            <label for="Bill">Bill</label>
+            <br>
+            <input type="text" class="special dollar" placeholder="0" id="bill">
+            <br>
+            <p>Select Tip %</p>
+            <div class="tips">
+               <div class="tp" onclick="forFivePercent()" id="tip-5">5%</div>
+               <div class="tp" onclick="forTenPercent()" id="tip-10">10%</div>
+               <div class="tp" onclick="forFifteenPercent()" id="tip-15">15%</div>
+               <div class="tp" onclick="forTwentyFivePercent()" id="tip-25">25%</div>
+               <div class="tp" onclick="forFiftyPercent()" id="tip-50">50%</div>
+               <input type="text" placeholder="Custom">
+            </div>
+            <div class="header">
+              <p>Number of People</p>
+              <p class="error" style="color: red;">Can't be zero</p>
+            </div>
+            <input type="text" class="special user" placeholder="0" id="no_of_people">
+          </div>
+          <div class="right">
+              <div class="inner-right">
+                <div class="amount">
+                  <p>Tip Amount</p>
+                  <p>/ person</p>
+                </div>
+                <div class="dollar-side"><img src="images/icon-dollar.svg" alt="dollar"><span id="tip-amount">0.00</span></div>
+              </div>
+              <div class="inner-right">
+                <div class="amount">
+                  <p>Total</p>
+                  <p>/ person</p>
+                </div>
+                <div class="dollar-side"><img src="images/icon-dollar.svg" alt="dollar"><span id="per-person">0.00</span></div>
+              </div>
+          
+              <button onclick="reloadPage()">Reset</button>
+          </div>
+      </div>
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.twitter.com/_henryi">Henry Agu</a>.
+      </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

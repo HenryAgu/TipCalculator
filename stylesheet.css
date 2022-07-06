@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: hsl(185, 41%, 84%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+}
+
+.left{
+    padding-right: 20px;
+}
+
+.left p,.left label{
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+}
+
+.left .special{
+    width: 100%;
+    height: 30px;
+    background: hsl(189, 41%, 97%);
+    border: none;
+    outline: none;
+    text-align: right;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+}
+
+.left .dollar:focus{
+    border: 2px solid hsl(183, 100%, 15%);
+}
+
+.left .dollar{
+    background-image: url(images/icon-dollar.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.left .user{
+    background-image: url(images/icon-person.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.left .user:focus{
+    border: 2px solid hsl(183, 100%, 15%);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    display: none;
+}
+
+
+
+.tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.tips .tp{
+    background: hsl(183, 100%, 15%);
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+.tips .tp:hover,.tips.tp:focus{
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tips input{
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.tips input:focus{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.right{
+    background: hsl(183, 100%, 15%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.inner-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-right p{
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(185, 41%, 84%);
+}
+
+.dollar-side span{
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(172, 67%, 45%);
+}
+
+.right button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    background: hsl(172, 67%, 45%);
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.right button:hover{
+    background: hsl(185, 41%, 84%);
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width: 480px){
+    .container{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .right{
+        margin-top: 30px;
+    }
+}
